@@ -16,19 +16,43 @@ html, body {
 	bottom:       60px;
 	width:        350px;
 	text-align: center;
-	z-index: 99;
 }
-#optionsVisibilityButton {
-	position: absolute;
-	z-index: 100;
+
+#renderer0 {
+	position:         absolute;
+	top:              0px;
+	width:            75%;
+	left:	          25%;
+	right:            0%;
+	bottom:           60px;
+	background-color: darkgray;
 }
-#renderer {
-	position:     absolute;
-	top:          0px;
-	right:        0px;
-	bottom:       60px;
-	z-index: 99;
+#renderer1 {
+	position:         absolute;
+	width:            0px;
+	background-color: gray;
 }
+#renderer2 {
+	position:         absolute;
+	width:            0px;
+	background-color: darkgray;
+}
+#renderer3 {
+	position:         absolute;
+	width:            0px;
+	background-color: gray;
+}
+#renderer4 {
+        position:         absolute;
+	width:            0px;
+        background-color: darkgray;
+}
+#renderer5 {
+        position:         absolute;
+	width:            0px;
+        background-color: gray;
+}
+
 #helper {
 	position:     absolute;
 	top:          0px;
@@ -109,19 +133,13 @@ html, body {
 	right:              0%;
 	width:             30%;
 }
-.rendererWithOptions {
-	left:         350px;
-}
-.rendererFullScreen {
-	left:         0px;
-}
-.rendererFullScreenPermanent {
-	left:         0px;
-}
 .hidden {
 	display:      none;
 }
-.hiddenPermanent {
+.optionsHide {
+	display:      none;
+}
+.optionsHidePermanent {
 	display:      none;
 }
 #error {
@@ -157,21 +175,13 @@ html, body {
 }
 #options form  { }
 #options p     { text-align: center; }
-#options label { display: inline-block; width:105px; margin: 5px; padding: 4px; text-align: right; }
-#options input { display: inline-block; width:195px; margin: 5px; padding: 4px; }
-#options select{ display: inline-block; width:195px; margin: 5px; padding: 4px; }
+#options label { display: inline-block; width:100px; margin: 5px; padding: 4px; text-align: right; }
+#options input { display: inline-block; width:200px; margin: 5px; padding: 4px; }
+#options select{ display: inline-block; width:200px; margin: 5px; padding: 4px; }
 
 .logo {
 	margin:      20px;
 	width:       300px;
-}
-.optionsVisibiliyButtonElements {
-	width:       30px;
-	height:      30px;
-	background-repeat:   no-repeat;
-	background-position: center;
-	background-color:    rgb(255, 255, 255);
-	border:              0;
 }
 .toolbarButton        {
 	width:               100px;
@@ -183,26 +193,16 @@ html, body {
 	border:              0;
 }
 
-.cameraOn      { background-image: url(Images/cameraOn.png); }
-.cameraOff     { background-image: url(Images/cameraOff.png); }
-.microphoneOn  { background-image: url(Images/microphoneOn.png); }
-.microphoneOff { background-image: url(Images/microphoneOff.png); }
-.callStart     { background-image: url(Images/callStart.png); }
-.callEnd       { background-image: url(Images/callEnd.png); }
-.showOptions   {
-	background-image: url(Images/showOptions.png);
-	background-size:  30px auto;
-	left: 0px;
-}
-.hideOptions   {
-	background-image: url(Images/hideOptions.png);
-	background-size:  15px auto;
-	left: 315px;
-}
+.cameraOn      { background-image: asset-data-url("cameraOn.png"); }
+.cameraOff     { background-image: url(cameraOff.png); }
+.microphoneOn  { background-image: url(microphoneOn.png); }
+.microphoneOff { background-image: url(microphoneOff.png); }
+.callStart     { background-image: url(callStart.png); }
+.callEnd       { background-image: url(callEnd.png); }
 
 /* Renderer Layout CSS */
 .pluginOverlay .videoContainer .frame video {
-	background-image: url(Images/default_profile.svg);
+	background-image: url(default_profile.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 33%;
