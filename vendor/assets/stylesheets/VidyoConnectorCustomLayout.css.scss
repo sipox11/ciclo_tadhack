@@ -193,16 +193,16 @@ html, body {
 	border:              0;
 }
 
-.cameraOn      { background-image: url(cameraOn.png); }
-.cameraOff     { background-image: url(cameraOff.png); }
-.microphoneOn  { background-image: url(microphoneOn.png); }
-.microphoneOff { background-image: url(microphoneOff.png); }
-.callStart     { background-image: url(callStart.png); }
-.callEnd       { background-image: url(callEnd.png); }
+.cameraOn      { background-image: asset-data-url("cameraOn.png"); }
+.cameraOff     { background-image: asset-data-url("cameraOff.png"); }
+.microphoneOn  { background-image: asset-data-url("microphoneOn.png"); }
+.microphoneOff { background-image: asset-data-url("microphoneOff.png"); }
+.callStart     { background-image: asset-data-url("callStart.png"); }
+.callEnd       { background-image: asset-data-url("callEnd.png"); }
 
 /* Renderer Layout CSS */
 .pluginOverlay .videoContainer .frame video {
-	background-image: url(default_profile.svg);
+	background-image: asset-data-url("default_profile.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 33%;
