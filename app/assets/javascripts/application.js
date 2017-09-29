@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require VidyoConnector
+//= require VidyoConnectorCustomLayout
 //= require_tree .
