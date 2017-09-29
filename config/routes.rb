@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: redirect('/static_home.html')
+  root to: static('/static_home.html')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
