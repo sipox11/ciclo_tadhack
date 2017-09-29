@@ -224,14 +224,14 @@ to hook up all of the events to elements. -->
 			<!-- This is the display name that other users will see.
 			-->
 			<label for="displayName">Display Name</label>
-			<input id="displayName" type="text" placeholder="Display Name" value="Guest">
+			<input id="displayName" type="text" placeholder="Display Name" value="<%= @display_name %>">
 		</p>
 		<p>
 			<!-- This is the "room" or "space" to which you're connecting
 			the user. Other users who join this same Resource will be able to see and hear each other.
 			-->
 			<label for="resourceId">Resource ID</label>
-			<input id="resourceId" type="text" placeholder="Conference Reference" value="demoRoom">
+			<input id="resourceId" type="text" placeholder="Conference Reference" value="<%= @resource_id %>">
 		</p>
 		</div>
 		<p>
