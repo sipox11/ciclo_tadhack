@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :problems
+  resources :professionals
+  resources :users
   get 'videocall/vidyoconnector'
 
   root to: "pages#home"
