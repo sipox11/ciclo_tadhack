@@ -1,10 +1,15 @@
 class VideocallController < ApplicationController
   def vidyoconnector
-  	@token = generate_token
+  	@token = generate_token(params[:user_name])
+  	@resource_id = params[:resource_id]
+  	@display_name = params[:display_name]
   end
 
   private
-  	def generate_token
-  		return "cHJvdmlzaW9uAGNpY2xvdXNlckAxYmU4NjUudmlkeW8uaW8ANjM2NzM5NDgzOTQAADYzMDdkNmU2NjNiOGZkZTIzNzA4ODA0NWI2YmFmZDM3ODNhYjIyYmY5ZmE4YjBiN2FkZTdlNTVkMjIwM2Y4NWIyNzk2MTcwYzc0ZjllOTIyZDgwYmNjYWM0M2YzZWY2MA=="
+  	
+  	def generate_token(user_name)
+  		token = %x(python3 generateToken.py --key=9b0369ac3cce4a8ca4070b6f27bfdd37 --appID=1be865.vidyo.io --userName=#{user_name} --expiresInSecs=10000 2>&1)
+			token = token.split("\n").last
+  		return token
   	end
 end
