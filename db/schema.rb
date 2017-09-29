@@ -24,9 +24,8 @@ ActiveRecord::Schema.define(version: 20170929180930) do
 
   create_table "problems", force: :cascade do |t|
     t.string   "name"
-    t.string   "brand"
-    t.string   "model"
     t.integer  "year"
+    t.string   "description"
     t.float    "budget"
     t.integer  "user_id"
     t.integer  "subcategory_id"
