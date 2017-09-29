@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root to: static('/static_home.html')
+  get 'videocall/vidyoconnector'
+
+  root to: "pages#home"
+  get '/videocall', to: "videocall#vidyoconnector"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
