@@ -3,6 +3,14 @@ $( ".login" ).toggle();
 $( ".description" ).toggle();
 };
 
+function flap(){
+$( ".login" ).toggle();
+$( ".description" ).toggle();
+
+$( ".hide" ).toggle();
+$( ".show" ).toggle();
+};
+
 function prof(){
 $( ".profesional" ).toggle();
 };

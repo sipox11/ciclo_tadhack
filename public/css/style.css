@@ -9,6 +9,9 @@
 /*
 GENERIC
 */
+.hide{
+	display:none;
+}
 .pnk{
 	color:#ef0a46;
 }
@@ -121,6 +124,10 @@ header{
 	padding:1.5em;
 	font-weight: 700;
 	text-align:center;
+}
+.buttonlanding:hover{
+	background-color: #ffdfe7;
+	transition: ease all;
 }
 .login{
 	display: none;
@@ -263,6 +270,9 @@ article div.imagen{
 	padding:0;
 	text-align:left;
 }
+.listitle:hover{
+	color:#ef0a46 !important;
+}
 .price{
 	margin-left:0em;
 
@@ -312,7 +322,7 @@ div.profesional{
 	margin-right:20px;
 }
 .grn{
-	background-color:#48ff00;
+	border:6px solid #48ff00;
 }
 a.lite{
 	color:#999;

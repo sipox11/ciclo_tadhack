@@ -6,13 +6,13 @@
 	font-family:'Roboto', sans-serif
 }
 body{
-	background-color:#ef0a46;
+	background-color:#ef0a46 !important;
 }
 header{
-	background-color:#ef0a46;
+	background-color:#ef0a46 !important;
 }
 main{
-    background-color:#ef0a46;
+    background-color:#ef0a46 !important;
 	max-width:1000px;
 	margin:0 auto;
 }
