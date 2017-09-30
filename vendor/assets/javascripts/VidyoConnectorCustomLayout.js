@@ -523,8 +523,8 @@ function showRenderers() {
 function updateRenderers(fullscreen) {
     if (fullscreen) {
         $("#options").addClass("optionsHide");
-        $("#renderer0").css({'position': 'absolute', 'left':  '0%', 'right': '66%', 'top': '0px', 'bottom': '54%',  'width': '34%'});
-        $("#renderer1").css({'position': 'absolute', 'left': '34%', 'right': '33%', 'top': '0px', 'bottom': '54%',  'width': '33%'});
+        $("#renderer0").css({'position': 'absolute', 'right':'0%', 'bottom': '0%',  'width': '34%', 'z-index': '100', 'height': '50%'});
+        $("#renderer1").css({'position': 'absolute', 'left': '0%', 'top': '0px', 'width': '100%', 'height': '100%'});
         // $("#renderer2").css({'position': 'absolute', 'left': '67%', 'right':  '0%', 'top': '0px', 'bottom': '54%',  'width': '33%'});
         // $("#renderer3").css({'position': 'absolute', 'left':  '0%', 'right': '66%', 'top': '46%', 'bottom': '60px', 'width': '34%'});
         // $("#renderer4").css({'position': 'absolute', 'left': '34%', 'right': '33%', 'top': '46%', 'bottom': '60px', 'width': '33%'});
