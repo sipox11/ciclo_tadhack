@@ -514,10 +514,10 @@ function parseUrlParameters(configParams) {
 function showRenderers() {
     ShowRenderer(vidyoConnector, "renderer0");
     ShowRenderer(vidyoConnector, "renderer1");
-    ShowRenderer(vidyoConnector, "renderer2");
-    ShowRenderer(vidyoConnector, "renderer3");
-    ShowRenderer(vidyoConnector, "renderer4");
-    ShowRenderer(vidyoConnector, "renderer5");
+    // ShowRenderer(vidyoConnector, "renderer2");
+    // ShowRenderer(vidyoConnector, "renderer3");
+    // ShowRenderer(vidyoConnector, "renderer4");
+    // ShowRenderer(vidyoConnector, "renderer5");
 }
 
 function updateRenderers(fullscreen) {
@@ -525,18 +525,18 @@ function updateRenderers(fullscreen) {
         $("#options").addClass("optionsHide");
         $("#renderer0").css({'position': 'absolute', 'left':  '0%', 'right': '66%', 'top': '0px', 'bottom': '54%',  'width': '34%'});
         $("#renderer1").css({'position': 'absolute', 'left': '34%', 'right': '33%', 'top': '0px', 'bottom': '54%',  'width': '33%'});
-        $("#renderer2").css({'position': 'absolute', 'left': '67%', 'right':  '0%', 'top': '0px', 'bottom': '54%',  'width': '33%'});
-        $("#renderer3").css({'position': 'absolute', 'left':  '0%', 'right': '66%', 'top': '46%', 'bottom': '60px', 'width': '34%'});
-        $("#renderer4").css({'position': 'absolute', 'left': '34%', 'right': '33%', 'top': '46%', 'bottom': '60px', 'width': '33%'});
-        $("#renderer5").css({'position': 'absolute', 'left': '67%', 'right':  '0%', 'top': '46%', 'bottom': '60px', 'width': '33%'});
+        // $("#renderer2").css({'position': 'absolute', 'left': '67%', 'right':  '0%', 'top': '0px', 'bottom': '54%',  'width': '33%'});
+        // $("#renderer3").css({'position': 'absolute', 'left':  '0%', 'right': '66%', 'top': '46%', 'bottom': '60px', 'width': '34%'});
+        // $("#renderer4").css({'position': 'absolute', 'left': '34%', 'right': '33%', 'top': '46%', 'bottom': '60px', 'width': '33%'});
+        // $("#renderer5").css({'position': 'absolute', 'left': '67%', 'right':  '0%', 'top': '46%', 'bottom': '60px', 'width': '33%'});
     } else {
         $("#options").removeClass("optionsHide");
         $("#renderer0").css({'position': 'absolute', 'left': '25%', 'right': '0%', 'top': '0px', 'bottom': '60px',  'width': '75%'});
         $("#renderer1").css({'position': 'absolute', 'width': '0px'});
-        $("#renderer2").css({'position': 'absolute', 'width': '0px'});
-        $("#renderer3").css({'position': 'absolute', 'width': '0px'});
-        $("#renderer4").css({'position': 'absolute', 'width': '0px'});
-        $("#renderer5").css({'position': 'absolute', 'width': '0px'});
+        // $("#renderer2").css({'position': 'absolute', 'width': '0px'});
+        // $("#renderer3").css({'position': 'absolute', 'width': '0px'});
+        // $("#renderer4").css({'position': 'absolute', 'width': '0px'});
+        // $("#renderer5").css({'position': 'absolute', 'width': '0px'});
     }
 
     showRenderers();
