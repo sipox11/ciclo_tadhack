@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :problems
   resources :professionals
 
-  root to: "pages#home"
+  root to: "index.html"
   get '/videocall', to: "videocall#vidyoconnector"
 
   # The priority is based upon order of creation: first created -> highest priority.

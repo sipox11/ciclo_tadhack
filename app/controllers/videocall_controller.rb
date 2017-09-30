@@ -3,7 +3,7 @@ class VideocallController < ApplicationController
   	@token = generate_token(params[:user_name])
   	@resource_id = params[:resource_id]
   	@display_name = params[:display_name]
-  	@phone_number_recipient = ""
+  	@phone_number_recipient = "34650683571"
   	message = "La videoconferencia esta preparada. Haz click aqui para unirte. https://uneteya.com"
   	send_sms(@phone_number_recipient, message)
   end

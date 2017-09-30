@@ -19,7 +19,8 @@ function StartVidyoConnector(VC) {
 
     // rendererSlots[0] is used to render the local camera;
     // rendererSlots[1] through rendererSlots[5] are used to render up to 5 cameras from remote participants.
-    var rendererSlots = ["1", OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT];
+    var rendererSlots = ["1", OPEN_REMOTE_SLOT];
+    // var rendererSlots = ["1", OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT, OPEN_REMOTE_SLOT];
 
     window.onresize = function() {
         showRenderers();

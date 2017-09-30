@@ -202,8 +202,8 @@
 <!-- We execute the VidyoConnectorApp library on page load
 to hook up all of the events to elements. -->
 <body id="vidyoConnector">
-	<div id="options" class="optionsHide">
-		<%= image_tag "VidyoIcon.png" %>
+	<div id="options" class="optionsHide"><!-- 
+		<%= image_tag "VidyoIcon.png" %> -->
 		<!-- <img class="logo" src="Images/VidyoIcon.png"/> -->
 
 		<form>
@@ -264,11 +264,11 @@ to hook up all of the events to elements. -->
 	</div>
 	<!-- This is the div into which the Vidyo component will be inserted. -->
 	<div id="renderer0" class="pluginOverlay"> </div>
-	<div id="renderer1" class="pluginOverlay"> </div>
+	<div id="renderer1" class="pluginOverlay"> </div><!-- 
 	<div id="renderer2" class="pluginOverlay"> </div>
 	<div id="renderer3" class="pluginOverlay"> </div>
 	<div id="renderer4" class="pluginOverlay"> </div>
-	<div id="renderer5" class="pluginOverlay"> </div>
+	<div id="renderer5" class="pluginOverlay"> </div> -->
 	<div id="toolbarLeft" class="toolbar">
 		<span id="participantStatus"></span>
 	</div>
@@ -446,8 +446,9 @@ to hook up all of the events to elements. -->
 	<div id="failed" class="hidden">
 		<table>
 		<tr>
-			<td><%= image_tag "VidyoIcon.png" %>
-			</td>
+			<td><!-- 
+				<%= image_tag "VidyoIcon.png" %>
+			 --></td>
 		</tr>
 		<tr>
 			<td id="failedText">Error</td>
