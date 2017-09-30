@@ -1,0 +1,34 @@
+<div class="login  animated fadeIn">
+  <div class="loginbox">
+    <div>
+      Sing in or <a>create a new acount</a>
+    </div>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, class: "round", placeholder: "Email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "round pink", placeholder: "Password" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Log in", onClick: "javascript:flip()".html_safe %>
+      </div>
+    <% end %>
+  </div>
+</div>
+  
+<main>
+  <div class="logolanding"></div>
+  <div class="description inc">
+    Give objects a new life by learning how to fix them in real time and from expert hands.
+  </div>
+  <a href="categories.html" class="buttonlanding inc">
+    Find a solution
+  </a>
+</main>
+<!-- 
+<%= render "users/shared/links" %> -->

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+        sessions: 'users/sessions'
+      }
+
   resources :problems
   resources :professionals
-  get 'videocall/vidyoconnector'
 
   root to: "pages#home"
   get '/videocall', to: "videocall#vidyoconnector"
