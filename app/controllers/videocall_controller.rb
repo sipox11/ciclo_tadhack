@@ -11,9 +11,8 @@ class VideocallController < ApplicationController
   private
   	
   	def generate_token(user_name)
-  		token = %x(python3 generateToken.py --key=9b0369ac3cce4a8ca4070b6f27bfdd37 --appID=1be865.vidyo.io --userName=#{user_name} --expiresInSecs=10000 2>&1)
+  		%x(python3 generateToken.py --key=<vidyo_developer_key> --appID=<vidyo_app_id> --userName=#{user_name} --expiresInSecs=10000 2>&1)
 			token = token.split("\n").last
-  		return token
   	end
 
   	def send_sms(phone_number, text)
