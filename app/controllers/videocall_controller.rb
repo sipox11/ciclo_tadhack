@@ -3,7 +3,7 @@ class VideocallController < ApplicationController
   	@token = generate_token(params[:user_name])
   	@resource_id = params[:resource_id]
   	@display_name = params[:display_name]
-  	@phone_number_recipient = "34650683571"
+  	@phone_number_recipient = "<Enter the phone number here>"
   	message = "Click here to open the app: https://ciclo.com/videocall?display_name=JoseAndroid&resource_id=ciclo_room"
   	send_sms(@phone_number_recipient, message)
   end
@@ -20,9 +20,9 @@ class VideocallController < ApplicationController
   		# username is SID Account
   		# password is Auth token
   		# Using basic authentication
-  		auth = {:username => "acc3f1aabc1-5743-35f4-be50-73f95e9efe90", :password => "aut57dca9f5-00c4-34ba-b06c-eb290469beed"}
-  		url = "https://api.apifonica.com/v2/accounts/acc3f1aabc1-5743-35f4-be50-73f95e9efe90/messages"
-  		query = { from: "34668692548", to: phone_number, "text": text }
+  		auth = {:username => "apifonica_sid_acount", :password => "apifonica_auth_token"}
+  		url = "https://api.apifonica.com/v2/accounts/<apifonica_sid_account>/messages"
+  		query = { from: "<Registered Phone Number>", to: phone_number, "text": text }
   		HTTParty.post(url, query: query, basic_auth: auth)
   	end
 end
